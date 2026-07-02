@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>X | O O'yin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 class="title">X | O</h1>
+
+    <!-- MENU -->
+    <div id="menu" class="menu">
+      <button id="play-bot">Botga qarshi</button>
+      <button id="play-friend">Do'st bilan</button>
+      <button id="show-stats">Statistika</button>
+    </div>
+
+    <!-- SCORE -->
+    <div id="scoreBoard" class="score-board hidden">
+    <div class="score-card score-x">
+        <div class="score-label">X</div>
+        <div id="scoreX" class="score-value">0</div>
+    </div>
+
+    <div class="score-card score-draw">
+        <div class="score-label">Durang</div>
+        <div id="scoreDraw" class="score-value">0</div>
+    </div>
+
+    <div class="score-card score-o">
+        <div class="score-label">O</div>
+        <div id="scoreO" class="score-value">0</div>
+    </div>
+    </div>
+
+    <!-- STATUS -->
+    <div id="status" class="status hidden"></div>
+
+    <!-- GAME -->
+    <div id="gameBoard" class="board hidden"></div>
+
+    <!-- GAME BUTTONS -->
+    <div id="gameButtons" class="buttons hidden">
+      <button id="restart">Qayta boshlash</button>
+      <button id="backMenu">Menyuga qaytish</button>
+    </div>
+
+    <!-- STATS -->
+    <div id="statsBox" class="stats hidden">
+  <h2>Statistika</h2>
+
+  <div class="stats-row stats-x">
+    <span class="stats-label">X g'alaba</span>
+    <span id="statsX" class="stats-value">0</span>
+  </div>
+
+  <div class="stats-row stats-o">
+    <span class="stats-label">O g'alaba</span>
+    <span id="statsO" class="stats-value">0</span>
+  </div>
+
+  <div class="stats-row stats-draw">
+    <span class="stats-label">Durang</span>
+    <span id="statsDraw" class="stats-value">0</span>
+  </div>
+
+  <button id="closeStats">Yopish</button>
+</div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

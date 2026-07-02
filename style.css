@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #111827, #1f2937, #0f172a);
+  color: white;
+}
+
+.container {
+  text-align: center;
+  width: 360px;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 25px;
+  color: #22d3ee;
+}
+
+.menu button,
+.buttons button,
+.stats button {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  color: white;
+  transition: 0.2s;
+}
+
+.menu button:hover,
+.buttons button:hover,
+.stats button:hover {
+  transform: translateY(-2px);
+}
+
+.board {
+  margin: 20px auto;
+  width: 318px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 9px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #1e293b;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cell:hover {
+  background: #334155;
+}
+
+.score-board {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  justify-content: center;
+}
+
+.score-card {
+  min-width: 95px;
+  padding: 12px 8px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.06),
+    0 10px 30px rgba(0,0,0,0.35);
+  transition: 0.25s;
+}
+
+.score-label {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+
+.score-value {
+  font-size: 30px;
+  font-weight: 800;
+  transition: 0.25s;
+}
+
+.score-x .score-value {
+  color: #22d3ee;
+}
+
+.score-o .score-value {
+  color: #fb7185;
+}
+
+.score-draw .score-value {
+  color: #facc15;
+}
+
+/* Ball oshganda */
+.score-pop {
+  animation: scorePop 0.7s ease;
+}
+
+@keyframes scorePop {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.35);
+  }
+  55% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* G'olib kataklar kuchli animatsiya */
+.win-x {
+  background: #10b981 !important;
+  animation: winPulse 1s ease-in-out infinite;
+  box-shadow:
+    0 0 15px rgba(16,185,129,0.7),
+    0 0 35px rgba(16,185,129,0.6);
+}
+
+.win-o {
+  background: #ef4444 !important;
+  animation: winPulse 1s ease-in-out infinite;
+  box-shadow:
+    0 0 15px rgba(239,68,68,0.7),
+    0 0 35px rgba(239,68,68,0.6);
+}
+
+.draw-cell {
+  background: #facc15 !important;
+  animation: drawPulse 0.7s ease-in-out 2;
+}
+
+@keyframes drawPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Yutganda umumiy effekt */
+.board-win {
+  animation: boardFlash 0.9s ease 2;
+}
+
+@keyframes boardFlash {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  40% {
+    transform: scale(1.03);
+    filter: brightness(1.5);
+  }
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
+.status {
+  margin-top: 14px;
+  font-size: 18px;
+  color: #22d3ee;
+}
+
+.buttons {
+  margin-top: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.win {
+  background: #10b981 !important;
+}
+
+.stats {
+  margin-top: 22px;
+  padding: 22px 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.06),
+    0 18px 40px rgba(0,0,0,0.35);
+  animation: statsAppear 0.35s ease;
+}
+
+.stats h2 {
+  margin-bottom: 18px;
+  color: #22d3ee;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+}
+
+.stats-label {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.stats-value {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.stats-x .stats-value {
+  color: #22d3ee;
+}
+
+.stats-o .stats-value {
+  color: #fb7185;
+}
+
+.stats-draw .stats-value {
+  color: #facc15;
+}
+
+.stats button {
+  margin-top: 8px;
+}
+
+@keyframes statsAppear {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
