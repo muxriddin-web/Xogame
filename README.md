@@ -48,9 +48,14 @@ Optimized JavaScript logic ensures fast gameplay and smooth performance across d
 
 # 📸 Preview
 
-**Tic Tac Toe Game Demo**
 
-*Click to watch the demo on my portfolio.*
+<div align="center">
+  <a href="https://mfs-portfoliouz.netlify.app/projects">
+    <img src="photo_2026-07-15_11-01-29.jpg" alt="Checkers Game Demo" width="600"/>
+  </a>
+  <p><i>Click to watch the demo on my portfolio</i></p>
+</div>
+
 
 ---
 
@@ -69,7 +74,7 @@ Optimized JavaScript logic ensures fast gameplay and smooth performance across d
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/muxriddin-web/tic-tac-toe.git
+git clone https://github.com/muxriddin-web/Xogame
 ```
 
 ---
@@ -77,7 +82,7 @@ git clone https://github.com/muxriddin-web/tic-tac-toe.git
 ## Navigate into the Project
 
 ```bash
-cd tic-tac-toe
+cd Xogame
 ```
 
 ---
@@ -134,20 +139,6 @@ The game keeps track of:
 
 ---
 
-# 🏆 Scoring System
-
-Players earn points based on performance.
-
-Example:
-
-| Event | Points |
-|--------|--------|
-| Win | +10 |
-| Draw | +2 |
-| Lose | 0 |
-
----
-
 # 📱 Responsive Design
 
 Fully optimized for:
@@ -164,8 +155,6 @@ Fully optimized for:
 - [ ] 🌐 Online Multiplayer
 - [ ] 💾 Save Match History
 - [ ] 🎚️ AI Difficulty Levels
-- [ ] 🔊 Sound Effects
-- [ ] 🎵 Background Music
 - [ ] 🎨 Multiple Themes
 - [ ] 📈 Leaderboard
 - [ ] 🔥 Achievement System
@@ -237,7 +226,7 @@ If you have questions, suggestions, or feedback, feel free to reach out.
 ### Project Repository
 
 ```
-https://github.com/muxriddin-web/tic-tac-toe
+(https://github.com/muxriddin-web/Xogame)
 ```
 
 ### Author
