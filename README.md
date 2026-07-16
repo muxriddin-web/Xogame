@@ -8,10 +8,6 @@ Whether you want to play against a friend on the same device or challenge a smar
 
 # ✨ Features
 
-## 🕹️ Local Multiplayer
-
-Play head-to-head against a friend on the same device with smooth turn-based gameplay.
-
 ## 🤖 Intelligent AI Bot
 
 Challenge an intelligent AI opponent designed to provide a fun and competitive experience.
