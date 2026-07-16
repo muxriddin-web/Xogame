@@ -2,15 +2,15 @@
 
 **Tic Tac Toe Pro** is a modern, web-based implementation of the classic Tic Tac Toe game. Designed with a clean, responsive interface and powered by efficient game logic, it delivers a fun and engaging experience for players of all skill levels.
 
-Whether you want to play against a friend on the same device or challenge a smart AI opponent, **Tic Tac Toe Pro** offers smooth gameplay, modern visuals, and an enjoyable gaming experience.
+Whether you want to play against a friend on the same device or challenge a smart Bot opponent, **Tic Tac Toe Pro** offers smooth gameplay, modern visuals, and an enjoyable gaming experience.
 
 ---
 
 # ✨ Features
 
-## 🤖 Intelligent AI Bot
+## 🤖 Intelligent Bot
 
-Challenge an intelligent AI opponent designed to provide a fun and competitive experience.
+Challenge an intelligent Bot opponent designed to provide a fun and competitive experience.
 
 ## 📊 Live Statistics
 
@@ -61,7 +61,7 @@ Optimized JavaScript logic ensures fast gameplay and smooth performance across d
 |------------|----------|
 | HTML5 | Structure & Semantic Layout |
 | CSS3 | Styling, Responsive Design & Animations |
-| JavaScript (ES6+) | Game Logic, AI & UI Interaction |
+| JavaScript (ES6+) | Game Logic, BOT & UI Interaction |
 
 ---
 
@@ -109,9 +109,9 @@ No installation or server setup required.
 
 ---
 
-# 🤖 AI Features
+# 🤖 BOT Features
 
-The built-in AI includes:
+The built-in BOT includes:
 
 - Smart move evaluation
 - Winning move detection
@@ -119,7 +119,7 @@ The built-in AI includes:
 - Fast decision making
 - Smooth gameplay experience
 
-Future versions will introduce multiple AI difficulty levels.
+Future versions will introduce multiple BOT difficulty levels.
 
 ---
 
@@ -130,7 +130,6 @@ The game keeps track of:
 - ✅ Wins
 - ❌ Losses
 - 🤝 Draws
-- ⏱️ Match Time
 - 🎮 Total Matches Played
 
 ---
